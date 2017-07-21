@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3.6
 
 import sys
 
@@ -26,5 +26,5 @@ if __name__ == '__main__':
             # New branch, check name
             (refs, heads, branchName) = branch.split("/", 2)
             if not checkBranchName(branchName):
-                print "Error: invalid branch name '" + branchName + "'"
+                print("Error: invalid branch name '" + branchName + "'")
                 sys.exit(1)

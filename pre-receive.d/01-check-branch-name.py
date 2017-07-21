@@ -5,8 +5,10 @@ import sys
 from jira import JIRA
 jira = JIRA('http://localhost/jira', basic_auth=('admin', 'adm8nf52!'))
 
+
 def getIssueKeys():
     return [i.key for i in jira.search_issues('')]
+
 
 def checkBranchName(branchName):
     branchParts = branchName.strip().split('-', 2)

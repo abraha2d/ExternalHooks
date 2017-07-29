@@ -3,7 +3,8 @@
 import sys
 
 from jira import JIRA
-jira = JIRA('http://localhost/jira', basic_auth=('admin', 'adm8nf52!'))
+# TODO: move credentials to config file
+jira = JIRA('http://localhost:8080', basic_auth=('admin', 'adm8nf52!'))
 
 
 def getIssueKeys():
